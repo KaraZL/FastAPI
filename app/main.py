@@ -12,6 +12,7 @@ app = FastAPI()
 '''
 # Create tables on startup (TEMPORARY)
 Base.metadata.create_all(bind=engine)
+comment after the migration since the application doesn't manage schem!a anymore - alembic does
 '''
 
 app.include_router(router)
